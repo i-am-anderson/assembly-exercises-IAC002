@@ -18,7 +18,7 @@ $$ |  \$$$$$$$ | \$$$$  |\$$$$$$$\ \$$$$$$$\       $$$$$$$$\ $$$$$$$$\
 3. A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Faça um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado funcionário. Considere, também, uma entrada de desconto para calcular o salário líquido.
 
 4. Faça um algoritmo que calcule e mostre a área de um trapézio usando apenas números inteiros.
-   Sabe-se que: `A = (base maior + base menor) * altura)/2`
+   Sabe-se que: `A = ((base maior + base menor) * altura)/2`
 
 5. Faça um algoritmo que receba o valor dos catetos de um triângulo, calcule e mostre o valor da hipotenusa.
 
@@ -31,7 +31,7 @@ $$ |  \$$$$$$$ | \$$$$  |\$$$$$$$\ \$$$$$$$\       $$$$$$$$\ $$$$$$$$\
 9. Fazer um algoritmo que leia 2 números inteiros e exiba a divisão destes. Sabe-se que o 2o número não pode ser zero, portanto, deve-se insistir na solicitação do 2o número até ele ser diferente de 0
 
 10. No Assembly MIPS, existe a operação REM que apresenta o resto da divisão de 2 valores inteiros.
-    SEM UTILIZAR A OPERAÇÃO REM, faça um algoritmo usando DIV, MUL e SUB que receba 2 valores inteiros e exiba o resto da divisão do maior pelo menor (Condição que deve ser verificada no início do algoritmo.
+    SEM UTILIZAR A OPERAÇÃO REM, faça um algoritmo usando DIV, MUL e SUB que receba 2 valores inteiros e exiba o resto da divisão do maior pelo menor (Condição que deve ser verificada no início do algoritmo.)
 
 11. Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo.
     Sabe-se que a entrada deve ser um número entre 0 e 100, validar a entrada para que não permita números fora deste intervalo
