@@ -10,7 +10,7 @@ main:
     li $t0, 0          # Contador (i = 0)
     li $t1, 15         # Limite
     li $t2, 0          # Maior altura (começa com 0)
-    li $t3, 999        # Menor altura (começa com valor alto)
+    li $t3, 0        # Menor altura (começa com valor alto)
 
 loop:
     # Verifica se já leu 15 pessoas
