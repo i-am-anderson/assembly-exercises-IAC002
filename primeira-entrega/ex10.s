@@ -3,7 +3,7 @@
 .data
     msg1: .asciiz "Digite o primeiro valor inteiro: "
     msg2: .asciiz "Digite o segundo valor inteiro: "
-    msg3: .asciiz "O resto da divisão é: "
+    msg3: .asciiz "O resto da divisao e: "
 .text
 main:
     #print(msg1)

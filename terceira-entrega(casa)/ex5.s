@@ -8,9 +8,9 @@
   msg1: .asciiz "\nDigite o valor de A: "
   msg2: .asciiz "\nDigite o valor de B: "
   msg3: .asciiz "\nDigite o valor de C: "
-  msg4: .asciiz "\nDUAS RAÍZES REAIS"
-  msg5: .asciiz "\nUMA RAÍZ REAL"
-  msg6: .asciiz "\nNÃO EXISTEM RAÍZES REAIS
+  msg4: .asciiz "\nDUAS RAIZES REAIS"
+  msg5: .asciiz "\nUMA RAIZ REAL"
+  msg6: .asciiz "\nNAO EXISTEM RAIZES REAIS"
 .text
 main:
   #print msg1

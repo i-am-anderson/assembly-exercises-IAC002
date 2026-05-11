@@ -3,7 +3,7 @@
 .data
   msg1: .asciiz "\nDigite o primeiro valor: "
   msg2: .asciiz "\nDigite o segundo valor: "
-  msg3: .asciiz "\nApós a troca, os valores são: "
+  msg3: .asciiz "\nApos a troca, os valores sao: "
   msg4: .asciiz " e "
 .text
 main:
