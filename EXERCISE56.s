@@ -26,58 +26,29 @@ input:
 
 inverted:
   li $t5, 0 # Numero Invertido
+  add $t2, $t0, 0
 
-  # $t1 = milhar, $t2 = centena, $t3 = dezena, $t4 = unidade
-  li $t6, 1000
-  div $t0, $t6
-  mflo $t1 # milhar
-
-  mfhi $t2 # resto
-  li $t6, 100
-  div $t2, $t6
-  mfhi $t3 # resto
-  mflo $t2 # centena
-
-  li $t6, 10
-  div $t3, $t6
-  mfhi $t4 # resto
-  mflo $t3 # dezena
-
-  # $t1 = milhar, $t2 = centena, $t3 = dezena, $t4 = unidade
-  mul $t4, $t4, 1000
-  mul $t3, $t3, 100
-  mul $t2, $t2, 10
-
-  add $t5, $t1, $t2
-  add $t5, $t5, $t3
-  add $t5, $t5, $t4
+loop:
+  # Se = 0, terminou
+  beqz $t2, compare 
   
-  beqz $t3, div_1000
-  beqz $t2, div_100
-  beqz $t1, div_10
-
-  j compare
-
-div_10:
+  # t5 = t5 * 10
   li $t6, 10
-  div $t5, $t6
-  mflo $t5
-  j compare
-
-div_100:
-  li $t6, 100
-  div $t5, $t6
-  mflo $t5
-  j compare
-
-div_1000:
-  li $t6, 1000
-  div $t5, $t6
-  mflo $t5
+  mul $t5, $t5, $t6
+  
+  # t3 = t2 % 10
+  div $t2, $t6
+  mfhi $t3         # resto
+  mflo $t2         # inteiro
+  
+  # t5 = t5 + t3
+  add $t5, $t5, $t3
+  
+  j loop
 
 compare:
   beq $t0, $t5, palindrome
-  subi $t0, $t0, 1
+  addi $t0, $t0, -1
   addi $t7, $t7, 1
   j inverted
 
